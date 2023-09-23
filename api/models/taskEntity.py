@@ -23,8 +23,8 @@ class Task(models.Model):
   description = models.TextField(null=True, blank=True)
   delivery_date = models.DateField()
   completed = models.BooleanField(null=True, blank=True, default=False)
-  aluno = models.ForeignKey(Student, on_delete=models.CASCADE)
-  disciplinas = models.ManyToManyField(Discipline, blank=True)
+  student = models.ForeignKey(Student, on_delete=models.CASCADE)
+  discipline = models.ManyToManyField(Discipline, blank=True)
 
   def __str__(self) -> str:
 

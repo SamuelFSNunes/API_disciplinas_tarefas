@@ -37,7 +37,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Teste3\",\r\n    \"email\": \"teste@teste.com\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Serei excluido\",\r\n    \"email\": \"serei.excluido@tchautchau.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -76,7 +76,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/alunos/2/",
+					"raw": "http://127.0.0.1:8000/api/alunos/6/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -88,7 +88,7 @@
 					"path": [
 						"api",
 						"alunos",
-						"2",
+						"6",
 						""
 					]
 				}
@@ -102,7 +102,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Teste2\",\r\n    \"email\": \"te2@teste.com\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Teste do PUT\",\r\n    \"email\": \"tste.put@teste.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -110,7 +110,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/alunos/3/",
+					"raw": "http://127.0.0.1:8000/api/alunos/5/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -122,7 +122,7 @@
 					"path": [
 						"api",
 						"alunos",
-						"3",
+						"5",
 						""
 					]
 				}
@@ -184,7 +184,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Lição teste\",\r\n    \"description\": \"\",\r\n    \"delivery_date\": \"2023-09-20\",\r\n    \"completed\": \"True\",\r\n    \"aluno\": \"2\",\r\n    \"disciplinas\": [1,2,3]\r\n}",
+					"raw": "{\r\n    \"title\": \"Outro Teste 3\",\r\n    \"description\": \"Descrição padrão 3\",\r\n    \"delivery_date\": \"2023-09-22\",\r\n    \"completed\": \"True\",\r\n    \"student\": 4,\r\n    \"discipline\": [1,2]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -216,7 +216,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/tarefas/3/",
+					"raw": "http://127.0.0.1:8000/api/tarefas/1/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -228,7 +228,7 @@
 					"path": [
 						"api",
 						"tarefas",
-						"3",
+						"1",
 						""
 					]
 				}
@@ -242,13 +242,38 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Lição teste\",\r\n    \"description\": \"blablabla\",\r\n    \"delivery_date\": \"2023-01-20\",\r\n    \"completed\": \"True\",\r\n    \"aluno\": \"3\",\r\n    \"disciplinas\": [1,3]\r\n}",
+					"raw": "{\r\n    \"title\": \"Lição 2023\",\r\n    \"description\": \"Teste de API 2023\",\r\n    \"delivery_date\": \"2023-09-23\",\r\n    \"completed\": false,\r\n    \"student\": 1,\r\n    \"discipline\": [1,2,3]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tarefas/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tarefas",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE TASK",
+			"request": {
+				"method": "DELETE",
+				"header": [],
 				"url": {
 					"raw": "http://127.0.0.1:8000/api/tarefas/3/",
 					"protocol": "http",
@@ -263,31 +288,6 @@
 						"api",
 						"tarefas",
 						"3",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "DELETE TASK",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/tarefas/6/",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"tarefas",
-						"6",
 						""
 					]
 				}
@@ -324,7 +324,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Desenvolvimento Mobile\",\r\n    \"description\": \"\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Banco de dados\",\r\n    \"description\": \"Só não faz DELETE sem WHERE porfavor\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -356,7 +356,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/disciplinas/2",
+					"raw": "http://127.0.0.1:8000/api/disciplinas/1",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -368,7 +368,7 @@
 					"path": [
 						"api",
 						"disciplinas",
-						"2"
+						"1"
 					]
 				}
 			},
@@ -381,7 +381,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Desenvolvimento Mobile\",\r\n    \"description\": \"teste\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Desenvolvimento Web 1\",\r\n    \"description\": \"Desenvolver site com front-end sem bootstrap e sem GPT\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -389,7 +389,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/disciplinas/4/",
+					"raw": "http://127.0.0.1:8000/api/disciplinas/1/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -401,7 +401,7 @@
 					"path": [
 						"api",
 						"disciplinas",
-						"4",
+						"1",
 						""
 					]
 				}
@@ -414,7 +414,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/disciplinas/4/",
+					"raw": "http://127.0.0.1:8000/api/disciplinas/5/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -426,7 +426,7 @@
 					"path": [
 						"api",
 						"disciplinas",
-						"4",
+						"5",
 						""
 					]
 				}
@@ -439,7 +439,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/alunos/1/tarefas/",
+					"raw": "http://127.0.0.1:8000/api/alunos/3/tarefas/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -451,7 +451,7 @@
 					"path": [
 						"api",
 						"alunos",
-						"1",
+						"3",
 						"tarefas",
 						""
 					]

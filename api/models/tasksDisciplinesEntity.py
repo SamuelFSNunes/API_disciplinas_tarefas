@@ -12,5 +12,5 @@ class TasksDisciplines(models.Model):
         Disciplina (ForeignKey): A foreign key relationship to the Discipline model, representing a discipline associated with a task.
   """
   
-  Tarefa = models.ForeignKey(Task, on_delete=models.CASCADE)
-  Disciplina = models.ForeignKey(Discipline, on_delete=models.CASCADE)
+  tasks = models.ForeignKey(Task, on_delete=models.CASCADE)
+  disciplines = models.ForeignKey(Discipline, on_delete=models.CASCADE)

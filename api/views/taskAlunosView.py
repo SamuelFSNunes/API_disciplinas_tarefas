@@ -29,7 +29,7 @@ class TasksStudentsView(APIView):
             Exception: If an error occurs during the retrieval process.
         """
         try:
-            tasks = Task.objects.filter(aluno=pk)
+            tasks = Task.objects.filter(student=pk)
             serializer = TaskSerializer(tasks, many=True)
             return Response(serializer.data)
         except Task.DoesNotExist as error:
